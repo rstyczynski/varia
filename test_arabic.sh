@@ -5,3 +5,5 @@ java_bin=$(ps aux | grep java | grep bin/java | tr -s ' ' | cut -d' ' -f11 | gre
 $java_bin\c -encoding UTF-8 arabic.java 
 $java_bin arabic
 $java_bin -Dfile.encoding="UTF-8" arabic
+rm arabic.class
+rm arabic.java
